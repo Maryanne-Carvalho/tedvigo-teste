@@ -1,0 +1,213 @@
+PASS  English text: 197 original text fragments, 0 missing/altered
+INFO  text fragments only in the new page (new UI labels / repeated nav): {"Skip to content": 1, "TED VIGO": 1, "English": 1, "EN": 1, "Language": 1, "Menu": 1, "Play video": 4, "Cup & Mystery — Mexico 1986 Trailer": 1, "Watch the Mexico 1986 trailer.": 1}
+PASS  alt attributes preserved
+PASS  title attributes preserved
+PASS  page <title> identical
+PASS  meta description identical
+PASS  13 synopses present and identical (13 in new page)
+PASS  books: same 13 titles in the same order
+PASS  book categories: same names and order
+PASS  all original element ids still exist
+PASS  all 31 original links keep text + destination
+PASS  anchor #book-forest-thorns resolves
+PASS  anchor #book-father-allan resolves
+PASS  anchor #main resolves
+PASS  anchor #book-captain-quin resolves
+PASS  anchor #book-japan-korea-2002 resolves
+PASS  anchor #book-mexico-1986 resolves
+PASS  anchor #trailers resolves
+PASS  anchor #book-brazil-2014 resolves
+PASS  anchor #contact resolves
+PASS  anchor #book-russia-2018 resolves
+PASS  anchor #home resolves
+PASS  anchor #about resolves
+PASS  anchor #peoples-cup resolves
+PASS  anchor #audiobooks resolves
+PASS  anchor #film resolves
+PASS  anchor #book-icaro-dhalia resolves
+PASS  anchor #book-magnolia resolves
+PASS  anchor #book-france-1938 resolves
+PASS  anchor #cup resolves
+PASS  anchor #book-abrahan-eloise resolves
+PASS  anchor #books resolves
+PASS  anchor #book-crackland resolves
+PASS  anchor #book-mario-helena-maria resolves
+PASS  15 distinct page images (covers, portrait, banner) saved byte-identical in assets/img
+PASS  img exists: assets/img/covers/book-crackland.webp
+PASS  img exists: assets/img/covers/book-mario-helena-maria.webp
+PASS  img exists: assets/img/covers/book-father-allan.webp
+PASS  img exists: assets/img/covers/book-abrahan-eloise.webp
+PASS  img exists: assets/img/covers/book-captain-quin.webp
+PASS  img exists: assets/img/covers/book-magnolia.webp
+PASS  img exists: assets/img/covers/book-icaro-dhalia.webp
+PASS  img exists: assets/img/covers/book-forest-thorns.webp
+PASS  img exists: assets/img/covers/book-france-1938.webp
+PASS  img exists: assets/img/covers/book-mexico-1986.webp
+PASS  img exists: assets/img/covers/book-japan-korea-2002.webp
+PASS  img exists: assets/img/covers/book-brazil-2014.webp
+PASS  img exists: assets/img/covers/book-russia-2018.webp
+PASS  img exists: assets/img/posters/brazil-2014.webp
+PASS  img exists: assets/img/posters/france-1938.webp
+PASS  img exists: assets/img/posters/captain-quin.webp
+PASS  img exists: assets/img/posters/mexico-1986.webp
+PASS  img exists: assets/img/covers/book-captain-quin.webp
+PASS  img exists: assets/img/covers/book-france-1938.webp
+PASS  img exists: assets/img/portrait-of-author-ted-vigo.webp
+PASS  Captain Quin interactive teaser identical to original (7 embedded scene images kept)
+PASS  video + poster exist: assets/videos/brazil-2014.mp4
+PASS  video + poster exist: assets/videos/france-1938.mp4
+PASS  video + poster exist: assets/videos/captain-quin.mp4
+PASS  video + poster exist: assets/videos/mexico-1986.mp4
+PASS  4 MP4 videos in gallery
+PASS  pt: 147 keys translated
+INFO  pt: keys identical to English (proper names, by design): ['nav.peoples', 'nav.trailers', 'ui.menu']
+PASS  pt: 21 teaser lines map onto the original teaser
+PASS  es: 147 keys translated
+INFO  es: keys identical to English (proper names, by design): ['nav.peoples']
+PASS  es: 21 teaser lines map onto the original teaser
+PASS  [phone-small 320x640] no horizontal scroll (scrollWidth 320)
+PASS  [phone-small] header layout: hamburger
+PASS  [phone-small] no element overflows the viewport
+PASS  [phone-small] tap targets >= 40px
+PASS  [phone-small] smallest text 12.8px
+INFO  [phone-small] banner height 764px of 640px viewport
+PASS  [phone-small] novels carousel next button: moved
+PASS  [phone-small] mobile menu opens
+PASS  [phone-small] mobile menu closes after choosing a link
+PASS  [phone-small] language menu fully on screen [18, 248, 224]
+PASS  [phone-small] no console errors
+PASS  [phone 375x667] no horizontal scroll (scrollWidth 375)
+PASS  [phone] header layout: hamburger
+PASS  [phone] no element overflows the viewport
+PASS  [phone] tap targets >= 40px
+PASS  [phone] smallest text 12.8px
+INFO  [phone] banner height 619px of 667px viewport
+PASS  [phone] novels carousel next button: moved
+PASS  [phone] mobile menu opens
+PASS  [phone] mobile menu closes after choosing a link
+PASS  [phone] language menu fully on screen [73, 303, 224]
+PASS  [phone] no console errors
+PASS  [phone-large 390x844] no horizontal scroll (scrollWidth 390)
+PASS  [phone-large] header layout: hamburger
+PASS  [phone-large] no element overflows the viewport
+PASS  [phone-large] tap targets >= 40px
+PASS  [phone-large] smallest text 12.8px
+INFO  [phone-large] banner height 760px of 844px viewport
+PASS  [phone-large] novels carousel next button: moved
+PASS  [phone-large] mobile menu opens
+PASS  [phone-large] mobile menu closes after choosing a link
+PASS  [phone-large] language menu fully on screen [88, 318, 224]
+PASS  [phone-large] no console errors
+PASS  [phone-xl 430x932] no horizontal scroll (scrollWidth 430)
+PASS  [phone-xl] header layout: hamburger
+PASS  [phone-xl] no element overflows the viewport
+PASS  [phone-xl] tap targets >= 40px
+PASS  [phone-xl] smallest text 12.8px
+INFO  [phone-xl] banner height 839px of 932px viewport
+PASS  [phone-xl] novels carousel next button: moved
+PASS  [phone-xl] mobile menu opens
+PASS  [phone-xl] mobile menu closes after choosing a link
+PASS  [phone-xl] language menu fully on screen [127, 357, 224]
+PASS  [phone-xl] no console errors
+PASS  [tablet-portrait 768x1024] no horizontal scroll (scrollWidth 768)
+PASS  [tablet-portrait] header layout: hamburger
+PASS  [tablet-portrait] no element overflows the viewport
+PASS  [tablet-portrait] tap targets >= 40px
+PASS  [tablet-portrait] smallest text 12.8px
+INFO  [tablet-portrait] banner height 922px of 1024px viewport
+PASS  [tablet-portrait] novels carousel next button: moved
+PASS  [tablet-portrait] mobile menu opens
+PASS  [tablet-portrait] mobile menu closes after choosing a link
+PASS  [tablet-portrait] language menu fully on screen [451, 681, 224]
+PASS  [tablet-portrait] no console errors
+PASS  [tablet-landscape 1024x768] no horizontal scroll (scrollWidth 1024)
+PASS  [tablet-landscape] header layout: hamburger
+PASS  [tablet-landscape] no element overflows the viewport
+PASS  [tablet-landscape] tap targets >= 40px
+PASS  [tablet-landscape] smallest text 12.8px
+INFO  [tablet-landscape] banner height 691px of 768px viewport
+PASS  [tablet-landscape] novels carousel next button: moved
+PASS  [tablet-landscape] mobile menu opens
+PASS  [tablet-landscape] mobile menu closes after choosing a link
+PASS  [tablet-landscape] language menu fully on screen [697, 927, 224]
+PASS  [tablet-landscape] no console errors
+PASS  [laptop-short 1280x720] no horizontal scroll (scrollWidth 1280)
+PASS  [laptop-short] header layout: inline-ok
+PASS  [laptop-short] no element overflows the viewport
+PASS  [laptop-short] tap targets >= 40px
+PASS  [laptop-short] smallest text 12.8px
+INFO  [laptop-short] banner height 648px of 720px viewport
+PASS  [laptop-short] novels carousel next button: moved
+PASS  [laptop-short] language menu fully on screen [1002, 1232, 224]
+PASS  [laptop-short] no console errors
+PASS  [laptop 1366x768] no horizontal scroll (scrollWidth 1366)
+PASS  [laptop] header layout: inline-ok
+PASS  [laptop] no element overflows the viewport
+PASS  [laptop] tap targets >= 40px
+PASS  [laptop] smallest text 12.8px
+INFO  [laptop] banner height 691px of 768px viewport
+PASS  [laptop] novels carousel next button: moved
+PASS  [laptop] language menu fully on screen [1088, 1318, 224]
+PASS  [laptop] no console errors
+PASS  [desktop 1440x900] no horizontal scroll (scrollWidth 1440)
+PASS  [desktop] header layout: inline-ok
+PASS  [desktop] no element overflows the viewport
+PASS  [desktop] tap targets >= 40px
+PASS  [desktop] smallest text 12.8px
+INFO  [desktop] banner height 810px of 900px viewport
+PASS  [desktop] novels carousel next button: moved
+PASS  [desktop] language menu fully on screen [1162, 1392, 224]
+PASS  [desktop] no console errors
+PASS  [fullhd 1920x1080] no horizontal scroll (scrollWidth 1920)
+PASS  [fullhd] header layout: inline-ok
+PASS  [fullhd] no element overflows the viewport
+PASS  [fullhd] tap targets >= 40px
+PASS  [fullhd] smallest text 12.8px
+INFO  [fullhd] banner height 960px of 1080px viewport
+PASS  [fullhd] novels carousel next button: moved
+PASS  [fullhd] language menu fully on screen [1470, 1700, 224]
+PASS  [fullhd] no console errors
+PASS  [ultrawide 2560x1080] no horizontal scroll (scrollWidth 2560)
+PASS  [ultrawide] header layout: inline-ok
+PASS  [ultrawide] no element overflows the viewport
+PASS  [ultrawide] tap targets >= 40px
+PASS  [ultrawide] smallest text 12.8px
+INFO  [ultrawide] banner height 960px of 1080px viewport
+PASS  [ultrawide] novels carousel next button: moved
+PASS  [ultrawide] language menu fully on screen [1790, 2020, 224]
+PASS  [ultrawide] no console errors
+PASS  [qhd 2560x1440] no horizontal scroll (scrollWidth 2560)
+PASS  [qhd] header layout: inline-ok
+PASS  [qhd] no element overflows the viewport
+PASS  [qhd] tap targets >= 40px
+PASS  [qhd] smallest text 12.8px
+INFO  [qhd] banner height 960px of 1440px viewport
+PASS  [qhd] novels carousel next button: moved
+PASS  [qhd] language menu fully on screen [1790, 2020, 224]
+PASS  [qhd] no console errors
+PASS  [1440px] synopsis dialog shows the full text + Explore link
+PASS  [1440px] Esc closes the dialog and focus returns to the card
+PASS  [1440px] video player opens with controls: assets/videos/france-1938.mp4
+PASS  [1440px] closing the player stops and unloads the video
+PASS  [1440px] teaser iframe loaded with the original document (English)
+PASS  [1440px] Portuguese applied to every translatable element (Ted Vigo — Livros, Cinema e Televisão)
+PASS  [1440px] Portuguese also applied to teaser text and image alt text
+PASS  [1440px] language choice persists after reload
+PASS  [1440px] keyboard-only language change to Español works: ['es', 'Libros', 'Tras abandonar su fe por amor,']
+PASS  [1440px] switching back to English restores the original text and teaser
+PASS  [1440px] no JavaScript errors during interaction
+PASS  [390px] synopsis dialog shows the full text + Explore link
+PASS  [390px] Esc closes the dialog and focus returns to the card
+PASS  [390px] video player opens with controls: assets/videos/france-1938.mp4
+PASS  [390px] closing the player stops and unloads the video
+PASS  [390px] teaser iframe loaded with the original document (English)
+PASS  [390px] Portuguese applied to every translatable element (Ted Vigo — Livros, Cinema e Televisão)
+PASS  [390px] Portuguese also applied to teaser text and image alt text
+PASS  [390px] language choice persists after reload
+PASS  [390px] keyboard-only language change to Español works: ['es', 'Libros', 'Tras abandonar su fe por amor,']
+PASS  [390px] switching back to English restores the original text and teaser
+PASS  [390px] no JavaScript errors during interaction
+PASS  opening index.html directly from disk works (fonts load, no errors)
+PASS  prefers-reduced-motion disables smooth scrolling/animation
+
+0 failed

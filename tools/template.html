@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">{{meta.title}}</title>
+<meta name="description" content="{{meta.desc}}" data-i18n-content="meta.desc">
+<meta name="theme-color" content="#0b1626">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>try{var l=localStorage.getItem('tv-lang');if(l&&l!=='en'){document.documentElement.classList.add('i18n-pending');setTimeout(function(){document.documentElement.classList.remove('i18n-pending')},2000)}}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="ui.skip">Skip to content</a>
+
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="flag-en" viewBox="0 0 60 40"><clipPath id="fe-c"><rect width="60" height="40"/></clipPath><g clip-path="url(#fe-c)"><rect width="60" height="40" fill="#012169"/><path d="M0 0L60 40M60 0L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0L60 40M60 0L0 40" stroke="#C8102E" stroke-width="3"/><path d="M30 0V40M0 20H60" stroke="#fff" stroke-width="12"/><path d="M30 0V40M0 20H60" stroke="#C8102E" stroke-width="7"/></g></symbol>
+  <symbol id="flag-pt" viewBox="0 0 60 40"><rect width="60" height="40" fill="#009C3B"/><path d="M30 5L54 20L30 35L6 20Z" fill="#FFDF00"/><circle cx="30" cy="20" r="8.6" fill="#002776"/><path d="M21.6 18.6c5.5-1.3 11.5-.4 16.6 2.4" stroke="#fff" stroke-width="1.4" fill="none"/></symbol>
+  <symbol id="flag-es" viewBox="0 0 60 40"><rect width="60" height="40" fill="#AA151B"/><rect y="10" width="60" height="20" fill="#F1BF00"/></symbol>
+  <symbol id="i-chev-l" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev-r" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev-d" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5C6.5 4.5 9.5 4.5 12 6c2.5-1.5 5.5-1.5 8-.5v13c-2.5-1-5.5-1-8 .5-2.5-1.5-5.5-1.5-8-.5z M12 6v13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#home" aria-label="Ted Vigo — Home">TED VIGO</a>
+    <nav class="main-nav" id="main-nav" aria-label="Main" data-i18n-aria="ui.mainNav">
+      <ul>
+        <li><a href="#home" data-i18n="nav.home">{{nav.home}}</a></li>
+        <li><a href="#about" data-i18n="nav.about">{{nav.about}}</a></li>
+        <li><a href="#books" data-i18n="nav.books">{{nav.books}}</a></li>
+        <li><a href="#cup" data-i18n="nav.cup">{{nav.cup}}</a></li>
+        <li><a href="#peoples-cup" data-i18n="nav.peoples">{{nav.peoples}}</a></li>
+        <li><a href="#audiobooks" data-i18n="nav.audio">{{nav.audio}}</a></li>
+        <li><a href="#film" data-i18n="nav.film">{{nav.film}}</a></li>
+        <li><a href="mailto:tedvigo@aol.com" data-i18n="nav.contact">{{nav.contact}}</a></li>
+        <li><a href="#trailers" data-i18n="nav.trailers">{{nav.trailers}}</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <div class="lang" id="lang">
+        <button class="lang-btn" id="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu">
+          <svg class="flag" aria-hidden="true"><use href="#flag-en"/></svg>
+          <span class="lang-name">English</span><span class="lang-code" aria-hidden="true">EN</span>
+          <svg class="chev" aria-hidden="true"><use href="#i-chev-d"/></svg>
+          <span class="visually-hidden" data-i18n="ui.langLabel">Language</span>
+        </button>
+        <ul class="lang-menu" id="lang-menu" role="menu" aria-labelledby="lang-btn" hidden></ul>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="visually-hidden" data-i18n="ui.menu">Menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="home">
+  <div class="tvh-hero">
+    <div class="tvh-main"><div class="tvh-eyebrow" data-i18n="hero.eyebrow">{{hero.eyebrow}}</div><h1 class="tvh-h1">TED VIGO</h1><h2 class="tvh-h2" data-i18n="hero.h2">{{hero.h2}}</h2><p class="tvh-p" data-i18n="hero.p">{{hero.p}}</p><div class="tvh-buttons"><a href="#books" data-i18n="hero.b1">{{hero.b1}}</a><a href="#books" data-i18n="hero.b2">{{hero.b2}}</a><a href="#trailers" data-i18n="hero.b3">{{hero.b3}}</a><a href="#film" data-i18n="hero.b4">{{hero.b4}}</a></div></div>
+  </div>
+</div>
+
+<main id="main" tabindex="-1">
+
+<!-- ============ BOOKS ============ -->
+<section id="books" class="books" aria-labelledby="books-title">
+  <div class="wrap books-intro">
+    <div class="intro-title">
+      <p class="kicker" data-i18n="books.kicker">{{books.kicker}}</p>
+      <h2 id="books-title" data-i18n="books.title">{{books.title}}</h2>
+    </div>
+    <div class="intro-copy">
+      <p class="lede" data-i18n="books.lede">{{books.lede}}</p>
+      <p class="catalog-line" data-i18n="books.catalog">{{books.catalog}}</p>
+    </div>
+  </div>
+{{BOOK_GROUPS}}
+</section>
+
+<!-- ============ THE PEOPLE'S CUP ============ -->
+<section class="lore" id="peoples-cup" aria-labelledby="lore-title">
+  <div class="wrap lore-grid">
+    <div class="lore-head">
+      <p class="kicker" data-i18n="lore.kicker">{{lore.kicker}}</p>
+      <h2 id="lore-title">{{lore.title}}</h2>
+      <p class="lede" data-i18n="lore.lede">{{lore.lede}}</p>
+    </div>
+    <div class="lore-body">
+      <p data-i18n="lore.p1">{{lore.p1}}</p>
+      <p data-i18n="lore.p2">{{lore.p2}}</p>
+      <p data-i18n="lore.p3">{{lore.p3}}</p>
+      <p data-i18n="lore.p4">{{lore.p4}}</p>
+      <p data-i18n="lore.p5">{{lore.p5}}</p>
+      <p data-i18n="lore.p6">{{lore.p6}}</p>
+    </div>
+  </div>
+  <div class="lore-principles-band">
+    <div class="wrap">
+      <ul class="lore-principles">
+{{PRINCIPLES}}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AUDIOBOOKS ============ -->
+<section class="audiobooks" id="audiobooks" aria-labelledby="audio-title">
+  <div class="wrap audio-layout">
+    <div class="audio-head">
+      <p class="kicker" data-i18n="audio.kicker">{{audio.kicker}}</p>
+      <h2 id="audio-title" data-i18n="audio.title">{{audio.title}}</h2>
+      <p class="lede" data-i18n="audio.lede">{{audio.lede}}</p>
+      <div class="audio-contact">
+        <a class="btn btn-gold" href="mailto:tedvigo@aol.com?subject=Ted%20Vigo%20%E2%80%94%20Audiobook%20Inquiry" data-i18n="audio.btn">{{audio.btn}}</a>
+      </div>
+    </div>
+    <div class="audio-grid">
+{{AUDIO_CARDS}}
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRAILERS ============ -->
+<section class="trailers-section" id="trailers" aria-labelledby="trailers-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker" data-i18n="tr.kicker">{{tr.kicker}}</p>
+      <h2 id="trailers-title" data-i18n="tr.title">{{tr.title}}</h2>
+      <p class="lede" data-i18n="tr.lede">{{tr.lede}}</p>
+    </div>
+
+    <div class="video-gallery" id="trailer-grid">
+{{VIDEO_CARDS}}
+    </div>
+
+    <div class="teaser-block" id="captain-quin-teaser">
+      <div class="teaser-copy">
+        <h3 data-i18n="tr.quinTeaser.h">{{tr.quinTeaser.h}}</h3>
+        <p data-i18n="tr.quinTeaser.p">{{tr.quinTeaser.p}}</p>
+      </div>
+      <div class="teaser-frame">
+        <iframe id="teaser-frame" title="Captain Quin — Cinematic Teaser" data-i18n-title="tr.quinTeaser.h" loading="lazy" allow="autoplay"></iframe>
+      </div>
+    </div>
+
+    <div class="coming-grid">
+      <article class="coming-card">
+        <div class="trailer-placeholder"><span data-i18n="tr.coming">{{tr.coming}}</span></div>
+        <div class="trailer-copy"><h3>{{tr.cs1.h}}</h3><p data-i18n="tr.cs1.p">{{tr.cs1.p}}</p></div>
+      </article>
+      <article class="coming-card">
+        <div class="trailer-placeholder"><span data-i18n="tr.coming">{{tr.coming}}</span></div>
+        <div class="trailer-copy"><h3 data-i18n="tr.cs2.h">{{tr.cs2.h}}</h3><p data-i18n="tr.cs2.p">{{tr.cs2.p}}</p></div>
+      </article>
+    </div>
+    <p class="trailer-note" data-i18n="tr.note">{{tr.note}}</p>
+  </div>
+</section>
+
+<!-- ============ FILM & TV ============ -->
+<section class="film" id="film" aria-labelledby="film-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker" data-i18n="film.eyebrow">{{film.eyebrow}}</p>
+      <h2 id="film-title" data-i18n="film.title">{{film.title}}</h2>
+      <p class="lede" data-i18n="film.lede">{{film.lede}}</p>
+    </div>
+    <div class="film-projects">
+      <article class="film-card">
+        <div class="film-media"><div class="film-backdrop" aria-hidden="true" style="background-image:url('assets/img/covers/book-captain-quin.webp')"></div>
+          <img alt="{{film.q.alt}}" data-i18n-alt="film.q.alt" class="film-card-image" id="film-captain-quin-image" src="assets/img/covers/book-captain-quin.webp" width="600" height="902" loading="lazy" decoding="async">
+        </div>
+        <div class="film-card-copy">
+          <p class="eyebrow" data-i18n="film.q.eyebrow">{{film.q.eyebrow}}</p>
+          <h3>{{film.q.h}}</h3>
+          <p data-i18n="film.q.p">{{film.q.p}}</p>
+          <a class="btn btn-gold" href="#contact" data-i18n="film.q.btn">{{film.q.btn}}</a>
+        </div>
+      </article>
+      <article class="film-card film-card--alt">
+        <div class="film-media"><div class="film-backdrop" aria-hidden="true" style="background-image:url('assets/img/covers/book-france-1938.webp')"></div>
+          <img alt="{{film.c.alt}}" data-i18n-alt="film.c.alt" class="film-card-image" id="film-cup-mystery-image" src="assets/img/covers/book-france-1938.webp" width="936" height="1600" loading="lazy" decoding="async">
+        </div>
+        <div class="film-card-copy">
+          <p class="eyebrow" data-i18n="film.c.eyebrow">{{film.c.eyebrow}}</p>
+          <h3>{{film.c.h}}</h3>
+          <p data-i18n="film.c.p">{{film.c.p}}</p>
+          <a class="btn btn-gold" href="#contact" data-i18n="film.c.btn">{{film.c.btn}}</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about" aria-labelledby="about-title">
+  <div class="wrap about-grid">
+    <figure class="portrait-frame">
+      <img alt="{{about.alt}}" data-i18n-alt="about.alt" class="author-portrait" src="assets/img/portrait-of-author-ted-vigo.webp" width="1080" height="1440" loading="lazy" decoding="async">
+    </figure>
+    <div class="about-copy">
+      <p class="kicker" data-i18n="about.eyebrow">{{about.eyebrow}}</p>
+      <h2 id="about-title">{{about.h}}</h2>
+      <p data-i18n="about.p1">{{about.p1}}</p>
+      <p data-i18n="about.p2">{{about.p2}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap contact-inner">
+    <p class="kicker" data-i18n="contact.eyebrow">{{contact.eyebrow}}</p>
+    <h2 id="contact-title" data-i18n="contact.h">{{contact.h}}</h2>
+    <p class="lede" data-i18n="contact.p">{{contact.p}}</p>
+    <a class="btn btn-gold btn-lg" href="mailto:tedvigo@aol.com?subject=Ted%20Vigo%20%E2%80%94%20Rights%20and%20Representation" data-i18n="contact.btn">{{contact.btn}}</a>
+    <p class="contact-email"><a href="mailto:tedvigo@aol.com">tedvigo@aol.com</a></p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span class="footer-brand" aria-hidden="true">TED VIGO</span>
+    <p data-i18n="footer">{{footer}}</p>
+  </div>
+</footer>
+
+<!-- Synopsis dialog -->
+<dialog class="modal synopsis-modal" id="synopsis-modal" aria-labelledby="syn-title">
+  <div class="modal-shell">
+    <button type="button" class="modal-close" data-close>
+      <svg aria-hidden="true"><use href="#i-close"/></svg><span class="visually-hidden" data-i18n="ui.close">Close</span>
+    </button>
+    <div class="syn-layout">
+      <div class="syn-cover"></div>
+      <div class="syn-text">
+        <p class="syn-cat"></p>
+        <h2 id="syn-title" class="syn-title"></h2>
+        <div class="syn-body"></div>
+        <a class="btn btn-outline syn-explore" href="#"></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<!-- Video dialog -->
+<dialog class="modal video-modal" id="video-modal" aria-labelledby="vid-title">
+  <div class="modal-shell">
+    <button type="button" class="modal-close" data-close>
+      <svg aria-hidden="true"><use href="#i-close"/></svg><span class="visually-hidden" data-i18n="ui.close">Close</span>
+    </button>
+    <video controls playsinline preload="none"></video>
+    <p class="vid-title" id="vid-title"></p>
+  </div>
+</dialog>
+
+<script src="i18n/pt.js" defer></script>
+<script src="i18n/es.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

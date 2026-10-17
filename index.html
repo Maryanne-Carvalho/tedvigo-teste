@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">Ted Vigo — Books, Film &amp; Television</title>
+<meta name="description" content="Official website of Ted Vigo — original books, stories, and film &amp; television projects." data-i18n-content="meta.desc">
+<meta name="theme-color" content="#0b1626">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>try{var l=localStorage.getItem('tv-lang');if(l&&l!=='en'){document.documentElement.classList.add('i18n-pending');setTimeout(function(){document.documentElement.classList.remove('i18n-pending')},2000)}}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="ui.skip">Skip to content</a>
+
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="flag-en" viewBox="0 0 60 40"><clipPath id="fe-c"><rect width="60" height="40"/></clipPath><g clip-path="url(#fe-c)"><rect width="60" height="40" fill="#012169"/><path d="M0 0L60 40M60 0L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0L60 40M60 0L0 40" stroke="#C8102E" stroke-width="3"/><path d="M30 0V40M0 20H60" stroke="#fff" stroke-width="12"/><path d="M30 0V40M0 20H60" stroke="#C8102E" stroke-width="7"/></g></symbol>
+  <symbol id="flag-pt" viewBox="0 0 60 40"><rect width="60" height="40" fill="#009C3B"/><path d="M30 5L54 20L30 35L6 20Z" fill="#FFDF00"/><circle cx="30" cy="20" r="8.6" fill="#002776"/><path d="M21.6 18.6c5.5-1.3 11.5-.4 16.6 2.4" stroke="#fff" stroke-width="1.4" fill="none"/></symbol>
+  <symbol id="flag-es" viewBox="0 0 60 40"><rect width="60" height="40" fill="#AA151B"/><rect y="10" width="60" height="20" fill="#F1BF00"/></symbol>
+  <symbol id="i-chev-l" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev-r" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev-d" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5C6.5 4.5 9.5 4.5 12 6c2.5-1.5 5.5-1.5 8-.5v13c-2.5-1-5.5-1-8 .5-2.5-1.5-5.5-1.5-8-.5z M12 6v13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#home" aria-label="Ted Vigo — Home">TED VIGO</a>
+    <nav class="main-nav" id="main-nav" aria-label="Main" data-i18n-aria="ui.mainNav">
+      <ul>
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#books" data-i18n="nav.books">Books</a></li>
+        <li><a href="#cup" data-i18n="nav.cup">Cup &amp; Mystery</a></li>
+        <li><a href="#peoples-cup" data-i18n="nav.peoples">The People's Cup</a></li>
+        <li><a href="#audiobooks" data-i18n="nav.audio">Audiobooks</a></li>
+        <li><a href="#film" data-i18n="nav.film">Film &amp; TV</a></li>
+        <li><a href="mailto:tedvigo@aol.com" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="#trailers" data-i18n="nav.trailers">Trailers</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <div class="lang" id="lang">
+        <button class="lang-btn" id="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu">
+          <svg class="flag" aria-hidden="true"><use href="#flag-en"/></svg>
+          <span class="lang-name">English</span><span class="lang-code" aria-hidden="true">EN</span>
+          <svg class="chev" aria-hidden="true"><use href="#i-chev-d"/></svg>
+          <span class="visually-hidden" data-i18n="ui.langLabel">Language</span>
+        </button>
+        <ul class="lang-menu" id="lang-menu" role="menu" aria-labelledby="lang-btn" hidden></ul>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="visually-hidden" data-i18n="ui.menu">Menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="home">
+  <div class="tvh-hero">
+    <div class="tvh-main"><div class="tvh-eyebrow" data-i18n="hero.eyebrow">BOOKS · AUDIOBOOKS · FILM · TELEVISION</div><h1 class="tvh-h1">TED VIGO</h1><h2 class="tvh-h2" data-i18n="hero.h2">Many Stories. Many Worlds. One Storyteller.</h2><p class="tvh-p" data-i18n="hero.p">Original stories that cross borders, generations and worlds — created for readers and imagined for the screen.</p><div class="tvh-buttons"><a href="#books" data-i18n="hero.b1">EXPLORE THE BOOKS</a><a href="#books" data-i18n="hero.b2">BOOK SYNOPSES</a><a href="#trailers" data-i18n="hero.b3">WATCH TRAILERS</a><a href="#film" data-i18n="hero.b4">FILM &amp; TV PROJECTS</a></div></div>
+  </div>
+</div>
+
+<main id="main" tabindex="-1">
+
+<!-- ============ BOOKS ============ -->
+<section id="books" class="books" aria-labelledby="books-title">
+  <div class="wrap books-intro">
+    <div class="intro-title">
+      <p class="kicker" data-i18n="books.kicker">The Library</p>
+      <h2 id="books-title" data-i18n="books.title">Books</h2>
+    </div>
+    <div class="intro-copy">
+      <p class="lede" data-i18n="books.lede">Drama, mystery, adventure, history, family stories and imaginative worlds for younger readers.</p>
+      <p class="catalog-line" data-i18n="books.catalog">13 Books. Three Worlds. One Storyteller.</p>
+    </div>
+  </div>
+  <div class="book-group book-group--novels">
+    <div class="wrap">
+      <div class="book-group-head">
+        <div class="group-titles">
+          <h3 id="track-novels-title" data-i18n="group.novels.h">Novels &amp; Stories</h3>
+          <p data-i18n="group.novels.p">Original dramatic and cinematic narratives.</p>
+        </div>
+        <div class="car-controls">
+          <button class="car-btn prev" type="button" aria-controls="track-novels" aria-label="Previous books" data-i18n-aria="ui.prevBooks"><svg aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+          <button class="car-btn next" type="button" aria-controls="track-novels" aria-label="Next books" data-i18n-aria="ui.nextBooks"><svg aria-hidden="true"><use href="#i-chev-r"/></svg></button>
+        </div>
+      </div>
+      <div class="carousel" role="region" aria-roledescription="carousel" data-i18n-roledesc="ui.carousel" aria-labelledby="track-novels-title">
+        <div class="car-track" id="track-novels" tabindex="0">
+        <article class="book-card" id="book-crackland">
+          <div class="book-cover-wrap"><div class="cover-frame"><img alt="Crackland book cover" data-i18n-alt="book.crackland.alt" class="book-cover" src="assets/img/covers/book-crackland.webp" width="1086" height="1448" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentNode.nextElementSibling.hidden=false"></div><div class="cover-fallback" hidden>CRACKLAND</div></div>
+          <div class="book-card-body">
+            <div class="book-category" data-i18n="book.crackland.cat">Novel · Supernatural Drama</div>
+            <h4 class="book-title">Crackland</h4>
+            <details class="synopsis-details"><summary><svg aria-hidden="true"><use href="#i-book"/></svg><span data-i18n="ui.readSynopsis">Read full synopsis</span></summary><p class="book-synopsis expanded-synopsis" id="book-crackland-synopsis" data-i18n="book.crackland.syn">After abandoning his faith for love, John Carpenter loses everything and descends into the dark underworld of São Paulo’s Cracolândia. Surrounded by addiction, violence, despair, and human suffering, John finds himself confronting a darkness that may be far more than human. As his path crosses those of Emília Borges and Reverend Billy Treannor, the struggle becomes more than a fight for survival. It becomes a battle between faith and darkness, loss and redemption, and the possibility of finding hope in the most unexpected places.</p></details>
+            <a class="book-access" href="#book-crackland" data-i18n="ui.explore">Explore Book →</a>
+          </div>
+        </article>
+        <article class="book-card" id="book-mario-helena-maria">
+          <div class="book-cover-wrap"><div class="cover-frame"><img alt="Mario, Helena and Maria book cover" data-i18n-alt="book.mario-helena-maria.alt" class="book-cover" src="assets/img/covers/book-mario-helena-maria.webp" width="500" height="750" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentNode.nextElementSibling.hidden=false"></div><div class="cover-fallback" hidden>MARIO, HELENA<br/>AND MARIA</div></div>
+          <div class="book-card-body">
+            <div class="book-category" data-i18n="book.mario-helena-maria.cat">Novel · Drama</div>
+            <h4 class="book-title">Mario, Helena and Maria</h4>
+            <details class="synopsis-details"><summary><svg aria-hidden="true"><use href="#i-book"/></svg><span data-i18n="ui.readSynopsis">Read full synopsis</span></summary><p class="book-synopsis expanded-synopsis" id="book-mario-helena-maria-synopsis" data-i18n="book.mario-helena-maria.syn">Love, identity, and second chances shape the lives of Mario, Helena, and Maria. As their paths intertwine, the boundaries between affection, personal choices, and the past become increasingly complicated. Their story explores the emotional consequences of love and the possibility of beginning again when life takes unexpected turns. Sometimes, the most difficult journey is not finding love, but understanding what it truly means.</p></details>
+            <a class="book-access" href="#book-mario-helena-maria" data-i18n="ui.explore">Explore Book →</a>
+          </div>
+        </article>
+        <article class="book-card" id="book-father-allan">
+          <div class="book-cover-wrap"><div class="cover-frame cover-frame--spread"><img alt="The Story of Father Allan book cover" data-i18n-alt="book.father-allan.alt" class="book-cover front-cover-from-spread is-spread" src="assets/img/covers/book-father-allan.webp" width="1200" height="801" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentNode.nextElementSibling.hidden=false"></div><div class="cover-fallback" hidden>THE STORY OF<br/>FATHER ALLAN</div></div>
+          <div class="book-card-body">
+            <div class="book-category" data-i18n="book.father-allan.cat">Novel · Drama</div>
+            <h4 class="book-title">The Story of Father Allan</h4>
+            <details class="synopsis-details"><summary><svg aria-hidden="true"><use href="#i-book"/></svg><span data-i18n="ui.readSynopsis">Read full synopsis</span></summary><p class="book-synopsis expanded-synopsis" id="book-father-allan-synopsis" data-i18n="book.father-allan.syn">Ordained as a Catholic priest in Atlanta in the 1980s, Allan Phillips is sent to a poor fishing village in Nicaragua, where civil war soon threatens the lives of the people he has come to serve. Faced with violence, moral dilemmas, and the demands of his faith, Allan must make choices that will change his life forever. Transferred to Los Angeles, he meets Vilma d’Orléans Orthuph, a young woman from a wealthy family struggling with addiction and homelessness. As Allan helps her rebuild her life, their relationship challenges his vocation and forces him to reconsider the meaning of love, service, and faith. Together, they begin a new life devoted to helping society’s most vulnerable people. Their journey becomes a story of sacrifice, compassion, redemption, and the courage to serve humanity beyond institutional boundaries.</p></details>
+            <a class="book-access" href="#book-father-allan" data-i18n="ui.explore">Explore Book →</a>
+          </div>
+        </article>
+        <article class="book-card" id="book-abrahan-eloise">
+          <div class="book-cover-wrap"><div class="cover-frame"><img alt="Abrahan and Eloise book cover" data-i18n-alt="book.abrahan-eloise.alt" class="book-cover front-cover-from-spread" src="assets/img/covers/book-abrahan-eloise.webp" width="570" height="800" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentNode.nextElementSibling.hidden=false"></div><div class="cover-fallback" hidden>ABRAHAN<br/>&amp; ELOISE</div></div>
+          <div class="book-card-body">
+            <div class="book-category" data-i18n="book.abrahan-eloise.cat">Novel · Romance &amp; Drama</div>
+            <h4 class="book-title">Abrahan and Eloise</h4>
+            <details class="synopsis-details"><summary><svg aria-hidden="true"><use href="#i-book"/></svg><span data-i18n="ui.readSynopsis">Read full synopsis</span></summary><p class="book-synopsis expanded-synopsis" id="book-abrahan-eloise-synopsis" data-i18n="book.abrahan-eloise.syn">In a story of love that challenges destiny, Abrahan and Eloise find themselves drawn together by feelings that may change the course of their lives. Set against the backdrop of Seattle, their relationship unfolds amid personal struggles, family ties, and the uncertainties of the future. As they confront the choices before them, they must discover whether love can overcome the obstacles that stand between two people and the future they hope to build together.</p></details>
+            <a class="book-access" href="#book-abrahan-eloise" data-i18n="ui.explore">Explore Book →</a>
+          </div>
+        </article>
+        <article class="book-card" id="book-captain-quin">
+          <div class="book-cover-wrap"><div class="cover-frame"><img alt="Captain Quin — The Black Pirates of Sagres book cover" data-i18n-alt="book.captain-quin.alt" class="book-cover front-cover-from-spread" src="assets/img/covers/book-captain-quin.webp" width="600" height="902" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentNode.nextElementSibling.hidden=false"></div><div class="cover-fallback" hidden>CAPTAIN QUIN<br/><small>THE BLACK PIRATES OF SAGRES</small></div></div>
+          <div class="book-card-body">
+            <div class="book-category" data-i18n="book.captain-quin.cat">Historical Adventure</div>
+            <h4 class="book-title">Captain Quin — The Black Pirates of Sagres</h4>
+            <details class="synopsis-details"><summary><svg aria-hidden="true"><use href="#i-book"/></svg><span data-i18n="ui.readSynopsis">Read full synopsis</span></summary><p class="book-synopsis expanded-synopsis" id="book-captain-quin-synopsis" data-i18n="book.captain-quin.syn">Set against the maritime world connecting Portugal and colonial Brazil, Captain Quin: The Black Pirates of Sagres is a historical adventure of courage, freedom, loyalty, and love. At the heart of the story is Captain Quin, whose journey is linked to the seafaring tradition of Sagres and the world of Moreira de Alencar. The Black Pirates of Sagres bring together men of African, mixed, Indigenous, and European backgrounds, united by their experiences and their life at sea. From the ocean voyages of Portugal to the sugar plantations of Brazil, Quin’s story explores the bonds between people from different cultures, the pursuit of freedom, and the personal sacrifices that shape a life of adventure.</p></details>
+            <a class="book-access" href="#book-captain-quin" data-i18n="ui.explore">Explore Book →</a>
+          </div>
+        </article>
+        </div>
+        <div class="car-progress" aria-hidden="true"><span></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="book-group book-group--children">
+    <div class="wrap">
+      <div class="book-group-head">
+        <div class="group-titles">
+          <h3 id="track-children-title" data-i18n="group.children.h">Children's Books</h3>
+          <p data-i18n="group.children.p">Adventure, wonder, imagination and heart for young readers.</p>
+        </div>
+        <div class="car-controls">
+          <button class="car-btn prev" type="button" aria-controls="track-children" aria-label="Previous books" data-i18n-aria="ui.prevBooks"><svg aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+          <button class="car-btn next" type="button" aria-controls="track-children" aria-label="Next books" data-i18n-aria="ui.nextBooks"><svg aria-hidden="true"><use href="#i-chev-r"/></svg></button>
+        </div>
+      </div>
+      <div class="carousel" role="region" aria-roledescription="carousel" data-i18n-roledesc="ui.carousel" aria-labelledby="track-children-title">
+        <div class="car-track" id="track-children" tabindex="0">
+        <article class="book-card" id="book-magnolia">
+          <div class="book-cover-wrap"><div class="cover-frame cover-frame--spread"><img alt="Magnolia and the Pink River Dolphin book cover" data-i18n-alt="book.magnolia.alt" class="book-cover front-cover-from-spread is-spread" src="assets/img/covers/book-magnolia.webp" width="1200" height="800" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentNode.nextElementSibling.hidden=false"></div><div class="cover-fallback" hidden>MAGNOLIA AND THE<br/>PINK RIVER DOLPHIN</div></div>
+          <div class="book-card-body">
+            <div class="book-category" data-i18n="book.magnolia.cat">Children's Fantasy</div>
+            <h4 class="book-title">Magnolia and the Pink River Dolphin</h4>
+            <details class="synopsis-details"><summary><svg aria-hidden="true"><use href="#i-book"/></svg><span data-i18n="ui.readSynopsis">Read full synopsis</span></summary><p class="book-synopsis expanded-synopsis" id="book-magnolia-synopsis" data-i18n="book.magnolia.syn">Deep in an enchanted world inspired by the Amazon, ancient magic, mysterious creatures, and forgotten secrets shape a story of love and redemption. At the center of this tale are Lola, a young woman afflicted by a mysterious curse, Giovanni Ferretti, an Italian-Brazilian doctor whose life takes an unexpected turn, and Jorge, a noble being known as the Man-Dolphin. As their paths converge, compassion and courage become essential in confronting the forces that separate the human world from the enchanted one. Blending Brazilian folklore, fantasy, romance, and the power of unconditional love, this story explores the possibility of overcoming even the darkest curses.</p></details>
+            <a class="book-access" href="#book-magnolia" data-i18n="ui.explore">Explore Book →</a>
+          </div>
+        </article>
+        <article class="book-card" id="book-icaro-dhalia">
+          <div class="book-cover-wrap"><div class="cover-frame cover-frame--spread"><img alt="Icaro and Dhalia book cover" data-i18n-alt="book.icaro-dhalia.alt" class="book-cover front-cover-from-spread is-spread" src="assets/img/covers/book-icaro-dhalia.webp" width="1200" height="800" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentNode.nextElementSibling.hidden=false"></div><div class="cover-fallback" hidden>ICARO<br/>AND DHALIA</div></div>
+          <div class="book-card-body">
+            <div class="book-category" data-i18n="book.icaro-dhalia.cat">Children's Fantasy · Adventure</div>
+            <h4 class="book-title">Icaro and Dhalia</h4>
+            <details class="synopsis-details"><summary><svg aria-hidden="true"><use href="#i-book"/></svg><span data-i18n="ui.readSynopsis">Read full synopsis</span></summary><p class="book-synopsis expanded-synopsis" id="book-icaro-dhalia-synopsis" data-i18n="book.icaro-dhalia.syn">Icaro is a boy who dreams of reaching beyond the limits of the world he knows. His extraordinary ambition leads him on an unexpected journey through a mysterious portal to the world of the Pleiadians, a highly advanced civilization built around love, compassion, and a profound sense of purpose. There, Icaro encounters a world unlike anything he has ever imagined. His journey becomes connected to Dhália, a courageous girl whose determination leads her toward an extraordinary mission involving the Sun and the Moon. As they face challenges beyond their planet, they discover that even the smallest acts of courage and kindness can help transform entire worlds. A fantasy adventure about imagination, friendship, love, and the power of a compassionate heart.</p></details>
+            <a class="book-access" href="#book-icaro-dhalia" data-i18n="ui.explore">Explore Book →</a>
+          </div>
+        </article>
+        <article class="book-card" id="book-forest-thorns">
+          <div class="book-cover-wrap"><div class="cover-frame cover-frame--spread"><img alt="The Forest of Thorns book cover" data-i18n-alt="book.forest-thorns.alt" class="book-cover front-cover-from-spread is-spread" src="assets/img/covers/book-forest-thorns.webp" width="1200" height="800" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentNode.nextElementSibling.hidden=false"></div><div class="cover-fallback" hidden>THE FOREST<br/>OF THORNS</div></div>
+          <div class="book-card-body">
+            <div class="book-category" data-i18n="book.forest-thorns.cat">Children's Fantasy · Adventure</div>
+            <h4 class="book-title">The Forest of Thorns</h4>
+            <details class="synopsis-details"><summary><svg aria-hidden="true"><use href="#i-book"/></svg><span data-i18n="ui.readSynopsis">Read full synopsis</span></summary><p class="book-synopsis expanded-synopsis" id="book-forest-thorns-synopsis" data-i18n="book.forest-thorns.syn">Beyond the familiar world lies a mysterious forest filled with danger, secrets, and unsettling encounters. Its tangled thorns and shadowy paths conceal a realm where courage is tested and the boundary between the ordinary and the extraordinary begins to disappear. The Forest of Thorns invites readers into an imaginative adventure where the unknown must be faced and the journey forward demands determination, curiosity, and courage.</p></details>
+            <a class="book-access" href="#book-forest-thorns" data-i18n="ui.explore">Explore Book →</a>
+          </div>
+        </article>
+        </div>
+        <div class="car-progress" aria-hidden="true"><span></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="book-group book-group--cup" id="cup">
+    <div class="wrap">
+      <div class="book-group-head">
+        <div class="group-titles">
+          <h3 id="track-cup-title" data-i18n="group.cup.h">Cup &amp; Mystery Series</h3>
+          <p class="series-tagline" data-i18n="group.cup.p">The People's Cup Draws the World. We Tell the Stories Behind It.</p>
+        </div>
+        <div class="car-controls">
+          <button class="car-btn prev" type="button" aria-controls="track-cup" aria-label="Previous books" data-i18n-aria="ui.prevBooks"><svg aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+          <button class="car-btn next" type="button" aria-controls="track-cup" aria-label="Next books" data-i18n-aria="ui.nextBooks"><svg aria-hidden="true"><use href="#i-chev-r"/></svg></button>
+        </div>
+      </div>
+      <div class="carousel" role="region" aria-roledescription="carousel" data-i18n-roledesc="ui.carousel" aria-labelledby="track-cup-title">
+        <div class="car-track" id="track-cup" tabindex="0">
+        <article class="book-card" id="book-france-1938">
+          <div class="book-cover-wrap"><div class="cover-frame"><img alt="Cup &amp; Mystery France 1938 book cover" data-i18n-alt="book.france-1938.alt" class="book-cover front-cover-from-spread" src="assets/img/covers/book-france-1938.webp" width="936" height="1600" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentNode.nextElementSibling.hidden=false"></div><div class="cover-fallback" hidden>CUP &amp; MYSTERY<br/>FRANCE 1938</div></div>
+          <div class="book-card-body">
+            <div class="book-category" data-i18n="book.france-1938.cat">Cup &amp; Mystery Series</div>
+            <h4 class="book-title">France 1938</h4>
+            <details class="synopsis-details"><summary><svg aria-hidden="true"><use href="#i-book"/></svg><span data-i18n="ui.readSynopsis">Read full synopsis</span></summary><p class="book-synopsis expanded-synopsis" id="book-france-1938-synopsis" data-i18n="book.france-1938.syn">As Europe moves toward one of the darkest periods in its history, the 1938 World Cup unfolds against a backdrop of political tension, espionage, and forbidden secrets. Behind the international spectacle, personal loyalties and dangerous intrigues collide in a world where trust can be fatal and love can become an unexpected risk. With war looming over Europe, the events surrounding the tournament reveal a hidden story unfolding beyond the reach of the crowds and the cameras.</p></details>
+            <a class="book-access" href="#book-france-1938" data-i18n="ui.explore">Explore Book →</a>
+          </div>
+        </article>
+        <article class="book-card" id="book-mexico-1986">
+          <div class="book-cover-wrap"><div class="cover-frame"><img alt="Cup &amp; Mystery Mexico 1986 book cover" data-i18n-alt="book.mexico-1986.alt" class="book-cover" src="assets/img/covers/book-mexico-1986.webp" width="1024" height="1536" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentNode.nextElementSibling.hidden=false"></div><div class="cover-fallback" hidden>CUP &amp; MYSTERY<br/>MEXICO 1986</div></div>
+          <div class="book-card-body">
+            <div class="book-category" data-i18n="book.mexico-1986.cat">Cup &amp; Mystery Series</div>
+            <h4 class="book-title">Mexico 1986</h4>
+            <details class="synopsis-details"><summary><svg aria-hidden="true"><use href="#i-book"/></svg><span data-i18n="ui.readSynopsis">Read full synopsis</span></summary><p class="book-synopsis expanded-synopsis" id="book-mexico-1986-synopsis" data-i18n="book.mexico-1986.syn">Mexico's 1986 World Cup becomes the backdrop for a mystery where disaster, ancient beliefs, and supernatural forces converge. An earthquake and the secrets connected to sacred ground open the way to events that challenge ordinary explanations. As the story unfolds, ancient Mayan mysteries and a growing sense of supernatural danger transform the atmosphere surrounding the tournament into something far more sinister. Behind the excitement of the world's greatest football competition, an unsettling mystery threatens to awaken forces that should have remained undisturbed.</p></details>
+            <a class="book-access" href="#book-mexico-1986" data-i18n="ui.explore">Explore Book →</a>
+          </div>
+        </article>
+        <article class="book-card" id="book-japan-korea-2002">
+          <div class="book-cover-wrap"><div class="cover-frame"><img alt="Cup &amp; Mystery Japan Korea 2002 book cover" data-i18n-alt="book.japan-korea-2002.alt" class="book-cover" src="assets/img/covers/book-japan-korea-2002.webp" width="1120" height="1404" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentNode.nextElementSibling.hidden=false"></div><div class="cover-fallback" hidden>CUP &amp; MYSTERY<br/>JAPAN / KOREA 2002</div></div>
+          <div class="book-card-body">
+            <div class="book-category" data-i18n="book.japan-korea-2002.cat">Cup &amp; Mystery Series</div>
+            <h4 class="book-title">Japan / Korea 2002</h4>
+            <details class="synopsis-details"><summary><svg aria-hidden="true"><use href="#i-book"/></svg><span data-i18n="ui.readSynopsis">Read full synopsis</span></summary><p class="book-synopsis expanded-synopsis" id="book-japan-korea-2002-synopsis" data-i18n="book.japan-korea-2002.syn">When Japan and South Korea jointly host the 2002 World Cup, the world's attention turns to an extraordinary meeting of cultures. Against this international backdrop, a personal story of love, tradition, family, and cultural conflict unfolds. As different expectations and values come into tension, the characters must navigate the challenges of relationships shaped by two distinct worlds. The tournament provides the setting for a story in which the most important victories may have nothing to do with football.</p></details>
+            <a class="book-access" href="#book-japan-korea-2002" data-i18n="ui.explore">Explore Book →</a>
+          </div>
+        </article>
+        <article class="book-card" id="book-brazil-2014">
+          <div class="book-cover-wrap"><div class="cover-frame"><img alt="Cup &amp; Mystery Brazil 2014 book cover" data-i18n-alt="book.brazil-2014.alt" class="book-cover front-cover-from-spread" src="assets/img/covers/book-brazil-2014.webp" width="720" height="1024" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentNode.nextElementSibling.hidden=false"></div><div class="cover-fallback" hidden>CUP &amp; MYSTERY<br/>BRAZIL 2014</div></div>
+          <div class="book-card-body">
+            <div class="book-category" data-i18n="book.brazil-2014.cat">Cup &amp; Mystery Series</div>
+            <h4 class="book-title">Brazil 2014</h4>
+            <details class="synopsis-details"><summary><svg aria-hidden="true"><use href="#i-book"/></svg><span data-i18n="ui.readSynopsis">Read full synopsis</span></summary><p class="book-synopsis expanded-synopsis" id="book-brazil-2014-synopsis" data-i18n="book.brazil-2014.syn">During the 2014 World Cup in Brazil, a country united by its passion for football becomes the setting for a dangerous story of crime, pursuit, and survival. Far from the stadiums and celebrations, a chain of events leads into the vast and unpredictable Amazon region, where the struggle to survive becomes entangled with secrets and hidden dangers. As the world watches the matches, another drama unfolds beyond the spotlight. In this story, the stakes extend far beyond the final score.</p></details>
+            <a class="book-access" href="#book-brazil-2014" data-i18n="ui.explore">Explore Book →</a>
+          </div>
+        </article>
+        <article class="book-card" id="book-russia-2018">
+          <div class="book-cover-wrap"><div class="cover-frame"><img alt="Cup &amp; Mystery Russia 2018 book cover" data-i18n-alt="book.russia-2018.alt" class="book-cover" src="assets/img/covers/book-russia-2018.webp" width="1024" height="1536" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentNode.nextElementSibling.hidden=false"></div><div class="cover-fallback" hidden>CUP &amp; MYSTERY<br/>RUSSIA 2018</div></div>
+          <div class="book-card-body">
+            <div class="book-category" data-i18n="book.russia-2018.cat">Cup &amp; Mystery Series</div>
+            <h4 class="book-title">Russia 2018</h4>
+            <details class="synopsis-details"><summary><svg aria-hidden="true"><use href="#i-book"/></svg><span data-i18n="ui.readSynopsis">Read full synopsis</span></summary><p class="book-synopsis expanded-synopsis" id="book-russia-2018-synopsis" data-i18n="book.russia-2018.syn">During the 2018 World Cup in Russia, a mysterious threat emerges from the shadows, drawing the world into a story of scientific danger, conspiracy, and the unexplained. As the international tournament brings people together, events beyond the stadiums point toward a threat with consequences that may reach far beyond the competition itself. Combining suspense, mystery, and speculative elements, Russia 2018 explores the dangerous possibilities hidden beneath the surface of a global celebration.</p></details>
+            <a class="book-access" href="#book-russia-2018" data-i18n="ui.explore">Explore Book →</a>
+          </div>
+        </article>
+        </div>
+        <div class="car-progress" aria-hidden="true"><span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE PEOPLE'S CUP ============ -->
+<section class="lore" id="peoples-cup" aria-labelledby="lore-title">
+  <div class="wrap lore-grid">
+    <div class="lore-head">
+      <p class="kicker" data-i18n="lore.kicker">The World Behind Cup &amp; Mystery</p>
+      <h2 id="lore-title">The People's Cup</h2>
+      <p class="lede" data-i18n="lore.lede">Every book in the series unfolds in the shadow of a tournament that appears in no history book — because it belongs entirely to this fiction.</p>
+    </div>
+    <div class="lore-body">
+      <p data-i18n="lore.p1">In 1930, international football stood at the edge of a new era. Several powerful sporting interests competed for the right to shape the first truly global tournament between national teams. One organization won the public contest. Another refused to disappear.</p>
+      <p data-i18n="lore.p2">The defeated side found new allies — wealthy businessmen, private betting syndicates, nightclub owners, bookmakers, shipping interests, and figures connected to organized crime. They understood something the sporting establishment had underestimated: an international football tournament is never just a game. It can become a global market of tickets, travel, entertainment, publicity — and wagers.</p>
+      <p data-i18n="lore.p3">Their answer was the <strong>PEOPLE'S CUP</strong>: a parallel international competition built to draw in everyday fans through cheaper tickets, smaller stadiums, aggressive local promotion, and matches between national sides built from entirely different players. Its first edition was staged in Uruguay in 1930, quietly founding a tradition that would outlive every man who built it.</p>
+      <p data-i18n="lore.p4">Presiding over it is the fictional <strong>International People's Football Council (IPFC)</strong>. In public, it is a democratic alternative dedicated to making the game affordable for the ordinary fan — and that mission is genuine. It invites national sides, writes the rules, appoints referees and chooses host venues. But its survival has always depended on private financiers whose interests reach far beyond sport: ticketing, local promotion, touring rights, concessions, and eventually broadcasting all pass through the same hands that provided the original capital.</p>
+      <p data-i18n="lore.p5">That is the debt the Cup can never quite repay. In exchange for the money that financed those first ships, hotels, prize purses and posters, the syndicates wanted access, influence and information. It became a permanent shadow trailing the tournament across generations — illegal betting markets, pressure on officials, secret financial arrangements, attempts to fix a result, political favors, and quiet fights for control.</p>
+      <p data-i18n="lore.p6">That shadow is not the subject of every story. Some editions barely brush against it; others expose it completely. The syndicate belongs to the hidden history of the People's Cup — a recurring element of the mythology, never a villain required in every book.</p>
+    </div>
+  </div>
+  <div class="lore-principles-band">
+    <div class="wrap">
+      <ul class="lore-principles">
+        <li class="lore-principle"><h3 data-i18n="lore.pr1.h">Independent Identity</h3><p data-i18n="lore.pr1.p">Its own name, trophy, emblem, typography, colors, tickets and posters — a complete identity, never a smaller copy of anything else.</p></li>
+        <li class="lore-principle"><h3 data-i18n="lore.pr2.h">Different Players</h3><p data-i18n="lore.pr2.p">Every national side is fictional, built from original players, coaches and officials who exist only within these pages.</p></li>
+        <li class="lore-principle"><h3 data-i18n="lore.pr3.h">Parallel Calendar</h3><p data-i18n="lore.pr3.p">The tournament echoes the same eras and host countries that inspire each story, while dates and details stay free to bend wherever the fiction needs them.</p></li>
+        <li class="lore-principle"><h3 data-i18n="lore.pr4.h">Football for Everyone</h3><p data-i18n="lore.pr4.p">Smaller stadiums and lower ticket prices are part of the competition's founding identity, not a footnote to it.</p></li>
+        <li class="lore-principle"><h3 data-i18n="lore.pr5.h">Human Stories First</h3><p data-i18n="lore.pr5.p">The tournament stays in the background. The people and conflicts at the center of each book never need to become "a story about football" to belong here.</p></li>
+        <li class="lore-principle"><h3 data-i18n="lore.pr6.h">Flexible Continuity</h3><p data-i18n="lore.pr6.p">Every book stands on its own, while the People's Cup threads a recognizable history across generations.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AUDIOBOOKS ============ -->
+<section class="audiobooks" id="audiobooks" aria-labelledby="audio-title">
+  <div class="wrap audio-layout">
+    <div class="audio-head">
+      <p class="kicker" data-i18n="audio.kicker">Stories to Hear</p>
+      <h2 id="audio-title" data-i18n="audio.title">Audiobooks</h2>
+      <p class="lede" data-i18n="audio.lede">Ted Vigo's stories are available for audiobook development, narration, production and international distribution.</p>
+      <div class="audio-contact">
+        <a class="btn btn-gold" href="mailto:tedvigo@aol.com?subject=Ted%20Vigo%20%E2%80%94%20Audiobook%20Inquiry" data-i18n="audio.btn">Audiobook Inquiries</a>
+      </div>
+    </div>
+    <div class="audio-grid">
+      <article class="audio-card">
+        <div aria-hidden="true" class="audio-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <p class="eyebrow" data-i18n="audio.c1.e">Fiction &amp; Drama</p>
+        <h3 data-i18n="audio.c1.h">Standalone Stories</h3>
+        <p data-i18n="audio.c1.p">Drama, romance, suspense, history and spiritual conflict adapted for an immersive listening experience.</p>
+      </article>
+      <article class="audio-card">
+        <div aria-hidden="true" class="audio-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <p class="eyebrow" data-i18n="audio.c2.e">Young Listeners</p>
+        <h3 data-i18n="audio.c2.h">Children's Stories</h3>
+        <p data-i18n="audio.c2.p">Magical adventures created for expressive narration, memorable characters and family listening.</p>
+      </article>
+      <article class="audio-card">
+        <div aria-hidden="true" class="audio-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <p class="eyebrow" data-i18n="audio.c3.e">Global Series</p>
+        <h3>Cup &amp; Mystery</h3>
+        <p data-i18n="audio.c3.p">An international anthology designed for cinematic audio storytelling across eras, countries and editions of the People's Cup.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRAILERS ============ -->
+<section class="trailers-section" id="trailers" aria-labelledby="trailers-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker" data-i18n="tr.kicker">Watch the Stories</p>
+      <h2 id="trailers-title" data-i18n="tr.title">Trailers &amp; Video Showcase</h2>
+      <p class="lede" data-i18n="tr.lede">A dedicated gallery for book trailers, film teasers, and upcoming productions. New videos can be added as they become available.</p>
+    </div>
+
+    <div class="video-gallery" id="trailer-grid">
+      <article class="video-card" id="brazil-2014-trailer">
+        <button class="play-btn" type="button" data-video="assets/videos/brazil-2014.mp4" data-poster="assets/img/posters/brazil-2014.webp" aria-describedby="brazil-2014-trailer-h">
+          <img src="assets/img/posters/brazil-2014.webp" alt="" width="1024" height="576" loading="lazy" decoding="async">
+          <span class="play-icon" aria-hidden="true"><svg><use href="#i-play"/></svg></span>
+          <span class="visually-hidden" data-i18n="ui.play">Play video</span>
+        </button>
+        <div class="trailer-copy"><h3 id="brazil-2014-trailer-h" data-i18n="tr.brazil.h">Cup &amp; Mystery — Brazil 2014 Trailer</h3><p data-i18n="tr.brazil.p">Watch the Brazil 2014 trailer.</p></div>
+      </article>
+      <article class="video-card" id="france-1938-trailer">
+        <button class="play-btn" type="button" data-video="assets/videos/france-1938.mp4" data-poster="assets/img/posters/france-1938.webp" aria-describedby="france-1938-trailer-h">
+          <img src="assets/img/posters/france-1938.webp" alt="" width="1024" height="576" loading="lazy" decoding="async">
+          <span class="play-icon" aria-hidden="true"><svg><use href="#i-play"/></svg></span>
+          <span class="visually-hidden" data-i18n="ui.play">Play video</span>
+        </button>
+        <div class="trailer-copy"><h3 id="france-1938-trailer-h" data-i18n="tr.france.h">Cup &amp; Mystery — France 1938 Trailer</h3><p data-i18n="tr.france.p">Watch the France 1938 trailer.</p></div>
+      </article>
+      <article class="video-card" id="captain-quin-video">
+        <button class="play-btn" type="button" data-video="assets/videos/captain-quin.mp4" data-poster="assets/img/posters/captain-quin.webp" aria-describedby="captain-quin-video-h">
+          <img src="assets/img/posters/captain-quin.webp" alt="" width="1024" height="576" loading="lazy" decoding="async">
+          <span class="play-icon" aria-hidden="true"><svg><use href="#i-play"/></svg></span>
+          <span class="visually-hidden" data-i18n="ui.play">Play video</span>
+        </button>
+        <div class="trailer-copy"><h3 id="captain-quin-video-h">Captain Quin — The Black Pirates of Sagres</h3><p data-i18n="tr.quinVideo.p">Historical adventure · Film teaser</p></div>
+      </article>
+      <article class="video-card" id="mexico-1986-trailer">
+        <button class="play-btn" type="button" data-video="assets/videos/mexico-1986.mp4" data-poster="assets/img/posters/mexico-1986.webp" aria-describedby="mexico-1986-trailer-h">
+          <img src="assets/img/posters/mexico-1986.webp" alt="" width="1024" height="576" loading="lazy" decoding="async">
+          <span class="play-icon" aria-hidden="true"><svg><use href="#i-play"/></svg></span>
+          <span class="visually-hidden" data-i18n="ui.play">Play video</span>
+        </button>
+        <div class="trailer-copy"><h3 id="mexico-1986-trailer-h" data-i18n="tr.mexico.h">Cup &amp; Mystery — Mexico 1986 Trailer</h3><p data-i18n="tr.mexico.p">Watch the Mexico 1986 trailer.</p></div>
+      </article>
+    </div>
+
+    <div class="teaser-block" id="captain-quin-teaser">
+      <div class="teaser-copy">
+        <h3 data-i18n="tr.quinTeaser.h">Captain Quin — Cinematic Teaser</h3>
+        <p data-i18n="tr.quinTeaser.p">An original cinematic introduction to The Black Pirates of Sagres. Click PLAY to begin.</p>
+      </div>
+      <div class="teaser-frame">
+        <iframe id="teaser-frame" title="Captain Quin — Cinematic Teaser" data-i18n-title="tr.quinTeaser.h" loading="lazy" allow="autoplay"></iframe>
+      </div>
+    </div>
+
+    <div class="coming-grid">
+      <article class="coming-card">
+        <div class="trailer-placeholder"><span data-i18n="tr.coming">COMING SOON</span></div>
+        <div class="trailer-copy"><h3>Cup &amp; Mystery</h3><p data-i18n="tr.cs1.p">International thriller series · Trailer showcase</p></div>
+      </article>
+      <article class="coming-card">
+        <div class="trailer-placeholder"><span data-i18n="tr.coming">COMING SOON</span></div>
+        <div class="trailer-copy"><h3 data-i18n="tr.cs2.h">More Stories by Ted Vigo</h3><p data-i18n="tr.cs2.p">New book trailers and screen projects</p></div>
+      </article>
+    </div>
+    <p class="trailer-note" data-i18n="tr.note">Watch the Captain Quin trailer above. Additional trailers will be added as they become available.</p>
+  </div>
+</section>
+
+<!-- ============ FILM & TV ============ -->
+<section class="film" id="film" aria-labelledby="film-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker" data-i18n="film.eyebrow">From Page to Screen</p>
+      <h2 id="film-title" data-i18n="film.title">Film &amp; Television Projects</h2>
+      <p class="lede" data-i18n="film.lede">Original stories with international settings, cinematic characters and strong potential for film and serialized television adaptation.</p>
+    </div>
+    <div class="film-projects">
+      <article class="film-card">
+        <div class="film-media"><div class="film-backdrop" aria-hidden="true" style="background-image:url('assets/img/covers/book-captain-quin.webp')"></div>
+          <img alt="Captain Quin film and television project" data-i18n-alt="film.q.alt" class="film-card-image" id="film-captain-quin-image" src="assets/img/covers/book-captain-quin.webp" width="600" height="902" loading="lazy" decoding="async">
+        </div>
+        <div class="film-card-copy">
+          <p class="eyebrow" data-i18n="film.q.eyebrow">Historical Adventure</p>
+          <h3>Captain Quin</h3>
+          <p data-i18n="film.q.p">A sweeping story of freedom, courage, love and destiny, following the rise of the legendary Black Pirates of Sagres across Portugal, Africa and Brazil.</p>
+          <a class="btn btn-gold" href="#contact" data-i18n="film.q.btn">Rights &amp; Representation</a>
+        </div>
+      </article>
+      <article class="film-card film-card--alt">
+        <div class="film-media"><div class="film-backdrop" aria-hidden="true" style="background-image:url('assets/img/covers/book-france-1938.webp')"></div>
+          <img alt="Cup and Mystery film and television series" data-i18n-alt="film.c.alt" class="film-card-image" id="film-cup-mystery-image" src="assets/img/covers/book-france-1938.webp" width="936" height="1600" loading="lazy" decoding="async">
+        </div>
+        <div class="film-card-copy">
+          <p class="eyebrow" data-i18n="film.c.eyebrow">International Anthology Series</p>
+          <h3>Cup &amp; Mystery</h3>
+          <p data-i18n="film.c.p">A global collection of suspense, romance, crime, politics and supernatural mystery, with each story unfolding around a different edition of the People's Cup.</p>
+          <a class="btn btn-gold" href="#contact" data-i18n="film.c.btn">Series Materials</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about" aria-labelledby="about-title">
+  <div class="wrap about-grid">
+    <figure class="portrait-frame">
+      <img alt="Portrait of author Ted Vigo" data-i18n-alt="about.alt" class="author-portrait" src="assets/img/portrait-of-author-ted-vigo.webp" width="1080" height="1440" loading="lazy" decoding="async">
+    </figure>
+    <div class="about-copy">
+      <p class="kicker" data-i18n="about.eyebrow">About the Author</p>
+      <h2 id="about-title">Ted Vigo</h2>
+      <p data-i18n="about.p1">Ted Vigo is an author and creator whose stories move across countries, eras and genres. His work combines drama, mystery, adventure, family, history and cinematic imagination.</p>
+      <p data-i18n="about.p2">His growing body of work includes standalone novels, children's stories and the international <strong>Cup &amp; Mystery</strong> book series.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap contact-inner">
+    <p class="kicker" data-i18n="contact.eyebrow">Contact</p>
+    <h2 id="contact-title" data-i18n="contact.h">Rights · Representation · Production</h2>
+    <p class="lede" data-i18n="contact.p">For publishing, film and television inquiries, adaptation rights, literary representation and international production partnerships.</p>
+    <a class="btn btn-gold btn-lg" href="mailto:tedvigo@aol.com?subject=Ted%20Vigo%20%E2%80%94%20Rights%20and%20Representation" data-i18n="contact.btn">Contact Ted Vigo</a>
+    <p class="contact-email"><a href="mailto:tedvigo@aol.com">tedvigo@aol.com</a></p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span class="footer-brand" aria-hidden="true">TED VIGO</span>
+    <p data-i18n="footer">© 2026 Ted Vigo. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Synopsis dialog -->
+<dialog class="modal synopsis-modal" id="synopsis-modal" aria-labelledby="syn-title">
+  <div class="modal-shell">
+    <button type="button" class="modal-close" data-close>
+      <svg aria-hidden="true"><use href="#i-close"/></svg><span class="visually-hidden" data-i18n="ui.close">Close</span>
+    </button>
+    <div class="syn-layout">
+      <div class="syn-cover"></div>
+      <div class="syn-text">
+        <p class="syn-cat"></p>
+        <h2 id="syn-title" class="syn-title"></h2>
+        <div class="syn-body"></div>
+        <a class="btn btn-outline syn-explore" href="#"></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<!-- Video dialog -->
+<dialog class="modal video-modal" id="video-modal" aria-labelledby="vid-title">
+  <div class="modal-shell">
+    <button type="button" class="modal-close" data-close>
+      <svg aria-hidden="true"><use href="#i-close"/></svg><span class="visually-hidden" data-i18n="ui.close">Close</span>
+    </button>
+    <video controls playsinline preload="none"></video>
+    <p class="vid-title" id="vid-title"></p>
+  </div>
+</dialog>
+
+<script src="i18n/pt.js" defer></script>
+<script src="i18n/es.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
