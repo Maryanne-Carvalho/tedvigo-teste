@@ -174,8 +174,9 @@ with sync_playwright() as pw:
         ok(not pg.evaluate("document.querySelector('#synopsis-modal').open") and foc, f'{tag} Esc closes the dialog and focus returns to the card')
         # video dialog
         pg.locator('#france-1938-trailer .play-btn').scroll_into_view_if_needed(); pg.click('#france-1938-trailer .play-btn'); pg.wait_for_timeout(600)
-        vs = pg.evaluate("(()=>{const d=document.querySelector('#video-modal'),v=d.querySelector('video');return [d.open,v.getAttribute('src'),v.controls]})()")
-        ok(vs[0] and vs[1] == 'assets/videos/france-1938.mp4' and vs[2], f'{tag} video player opens with controls: {vs[1]}')
+        vs = pg.evaluate("(()=>{const d=document.querySelector('#video-modal'),v=d.querySelector('video');return [d.open,v.getAttribute('src')||'',v.controls]})()")
+        # (this test Chromium cannot decode H.264, so the player may fall through its folder list; tools/test_video_fallback.py tests that part)
+        ok(vs[0] and vs[1].endswith('france-1938.mp4') and vs[2], f'{tag} video player opens with controls: {vs[1]}')
         if SHOTS: pg.screenshot(path=f'{SHOTS}/video-{w}.png')
         pg.click('#video-modal .modal-close'); pg.wait_for_timeout(300)
         ok(pg.evaluate("(()=>{const v=document.querySelector('#video-modal video');return !document.querySelector('#video-modal').open && !v.getAttribute('src')})()"), f'{tag} closing the player stops and unloads the video')

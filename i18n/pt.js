@@ -13,6 +13,7 @@ window.I18N.pt = {
  "ui.play": "Reproduzir vídeo",
  "ui.prevBooks": "Livros anteriores",
  "ui.nextBooks": "Próximos livros",
+ "ui.videoError": "Não foi possível carregar este vídeo. Verifique se o arquivo foi enviado para:",
  "ui.carousel": "carrossel",
  "ui.readSynopsis": "Ler sinopse completa",
  "ui.explore": "Explorar livro →",

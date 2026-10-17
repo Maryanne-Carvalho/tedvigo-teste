@@ -133,21 +133,39 @@
     $('.syn-explore', syn).addEventListener('click', function () { syn.close(); });
   }
 
-  /* Video player: one dialog, video loaded only on demand, no autoplay without a click. */
-  var vdlg = $('#video-modal'), video = $('video', vdlg);
+  /* Video player: one dialog, video loaded only on demand, no autoplay without a click.
+     If the file is not at assets/videos/, the player also tries the other folders where it is
+     commonly uploaded (site root, videos/), then shows a clear message instead of a black box. */
+  var vdlg = $('#video-modal'), video = $('video', vdlg), vErr = $('.vid-error', vdlg);
+  var candidates = [], tryIndex = 0, playing = false;
+  function candidateList(path) {
+    var file = path.split('/').pop();
+    return [path, file, 'videos/' + file, 'assets/' + file].filter(function (v, i, a) { return a.indexOf(v) === i; });
+  }
+  function tryNext() {
+    if (tryIndex >= candidates.length) {
+      vErr.hidden = false; video.hidden = true;
+      $('code', vErr).textContent = candidates[0];
+      return;
+    }
+    video.src = candidates[tryIndex++];
+    var pr = video.play(); if (pr && pr.catch) pr.catch(function () {});
+  }
+  video.addEventListener('error', function () { if (playing) tryNext(); });
   $$('.play-btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
       var title = $('h3', btn.closest('.video-card')).textContent;
       if (!supportsDialog) { window.open(btn.dataset.video, '_blank'); return; }
+      vErr.hidden = true; video.hidden = false;
       video.poster = btn.dataset.poster;
-      video.src = btn.dataset.video;
       video.setAttribute('aria-label', title);
       $('.vid-title', vdlg).textContent = title;
+      candidates = candidateList(btn.dataset.video); tryIndex = 0; playing = true;
       openDialog(vdlg, btn);
-      var pr = video.play(); if (pr && pr.catch) pr.catch(function () {});
+      tryNext();
     });
   });
-  vdlg.addEventListener('close', function () { video.pause(); video.removeAttribute('src'); video.load(); });
+  vdlg.addEventListener('close', function () { playing = false; video.pause(); video.removeAttribute('src'); video.load(); });
 
   /* ------------------------------------------------------------------
      Captain Quin interactive teaser — original srcdoc loaded lazily

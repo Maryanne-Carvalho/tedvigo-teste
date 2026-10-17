@@ -9,6 +9,9 @@ Site estático (HTML + CSS + JavaScript, sem dependências externas), pronto par
 
 ## Como publicar (GitHub Pages)
 
+> **Vídeos no GitHub pelo navegador:** a pasta `assets/videos/` já vem no zip com um arquivo `LEIA-ME.txt`, para que ela exista no repositório. No GitHub, abra `assets` → `videos`, clique em **Add file → Upload files** e envie os 4 `.mp4` ali dentro. Se os vídeos forem enviados para a raiz do repositório ou para uma pasta `videos/`, o player também os encontra. Se não encontrar, ele mostra o caminho esperado em vez de uma tela preta.
+
+
 0. **Montagem dos arquivos recebidos:** descompacte `1-site-ted-vigo.zip` e coloque os 4 arquivos `.mp4` dentro de `ted-vigo-site/assets/videos/` (os nomes precisam ficar exatamente `brazil-2014.mp4`, `france-1938.mp4`, `captain-quin.mp4`, `mexico-1986.mp4`). O `2-backup-original.zip` é só a cópia de segurança e pode ser descompactado dentro de `ted-vigo-site/` se quiser mantê-la junto.
 1. Envie **todo o conteúdo desta pasta** para o repositório (a pasta `backup/` e a pasta `tools/` são opcionais; o site não depende delas).
 2. Em *Settings → Pages*, escolha a branch e a pasta raiz (`/`).

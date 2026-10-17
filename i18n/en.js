@@ -127,6 +127,7 @@ window.I18N=window.I18N||{};window.I18N_EN_REFERENCE={
  "contact.btn": "Contact Ted Vigo",
  "footer": "© 2026 Ted Vigo. All rights reserved.",
  "ui.close": "Close",
+ "ui.videoError": "This video could not be loaded. Check that the file was uploaded to:",
  "book.crackland.alt": "Crackland book cover",
  "book.mario-helena-maria.alt": "Mario, Helena and Maria book cover",
  "book.father-allan.alt": "The Story of Father Allan book cover",

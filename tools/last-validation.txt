@@ -9,29 +9,29 @@ PASS  books: same 13 titles in the same order
 PASS  book categories: same names and order
 PASS  all original element ids still exist
 PASS  all 31 original links keep text + destination
-PASS  anchor #book-forest-thorns resolves
-PASS  anchor #book-father-allan resolves
-PASS  anchor #main resolves
-PASS  anchor #book-captain-quin resolves
-PASS  anchor #book-japan-korea-2002 resolves
-PASS  anchor #book-mexico-1986 resolves
-PASS  anchor #trailers resolves
-PASS  anchor #book-brazil-2014 resolves
-PASS  anchor #contact resolves
-PASS  anchor #book-russia-2018 resolves
-PASS  anchor #home resolves
-PASS  anchor #about resolves
-PASS  anchor #peoples-cup resolves
-PASS  anchor #audiobooks resolves
-PASS  anchor #film resolves
-PASS  anchor #book-icaro-dhalia resolves
-PASS  anchor #book-magnolia resolves
-PASS  anchor #book-france-1938 resolves
-PASS  anchor #cup resolves
 PASS  anchor #book-abrahan-eloise resolves
+PASS  anchor #book-mexico-1986 resolves
 PASS  anchor #books resolves
+PASS  anchor #book-magnolia resolves
+PASS  anchor #cup resolves
+PASS  anchor #trailers resolves
+PASS  anchor #book-captain-quin resolves
+PASS  anchor #main resolves
+PASS  anchor #audiobooks resolves
 PASS  anchor #book-crackland resolves
+PASS  anchor #book-icaro-dhalia resolves
+PASS  anchor #about resolves
+PASS  anchor #film resolves
 PASS  anchor #book-mario-helena-maria resolves
+PASS  anchor #book-russia-2018 resolves
+PASS  anchor #book-japan-korea-2002 resolves
+PASS  anchor #contact resolves
+PASS  anchor #book-brazil-2014 resolves
+PASS  anchor #home resolves
+PASS  anchor #book-father-allan resolves
+PASS  anchor #book-france-1938 resolves
+PASS  anchor #book-forest-thorns resolves
+PASS  anchor #peoples-cup resolves
 PASS  15 distinct page images (covers, portrait, banner) saved byte-identical in assets/img
 PASS  img exists: assets/img/covers/book-crackland.webp
 PASS  img exists: assets/img/covers/book-mario-helena-maria.webp
@@ -59,10 +59,10 @@ PASS  video + poster exist: assets/videos/france-1938.mp4
 PASS  video + poster exist: assets/videos/captain-quin.mp4
 PASS  video + poster exist: assets/videos/mexico-1986.mp4
 PASS  4 MP4 videos in gallery
-PASS  pt: 147 keys translated
+PASS  pt: 148 keys translated
 INFO  pt: keys identical to English (proper names, by design): ['nav.peoples', 'nav.trailers', 'ui.menu']
 PASS  pt: 21 teaser lines map onto the original teaser
-PASS  es: 147 keys translated
+PASS  es: 148 keys translated
 INFO  es: keys identical to English (proper names, by design): ['nav.peoples']
 PASS  es: 21 teaser lines map onto the original teaser
 PASS  [phone-small 320x640] no horizontal scroll (scrollWidth 320)
@@ -187,7 +187,7 @@ PASS  [qhd] language menu fully on screen [1790, 2020, 224]
 PASS  [qhd] no console errors
 PASS  [1440px] synopsis dialog shows the full text + Explore link
 PASS  [1440px] Esc closes the dialog and focus returns to the card
-PASS  [1440px] video player opens with controls: assets/videos/france-1938.mp4
+PASS  [1440px] video player opens with controls: assets/france-1938.mp4
 PASS  [1440px] closing the player stops and unloads the video
 PASS  [1440px] teaser iframe loaded with the original document (English)
 PASS  [1440px] Portuguese applied to every translatable element (Ted Vigo — Livros, Cinema e Televisão)
@@ -198,7 +198,7 @@ PASS  [1440px] switching back to English restores the original text and teaser
 PASS  [1440px] no JavaScript errors during interaction
 PASS  [390px] synopsis dialog shows the full text + Explore link
 PASS  [390px] Esc closes the dialog and focus returns to the card
-PASS  [390px] video player opens with controls: assets/videos/france-1938.mp4
+PASS  [390px] video player opens with controls: assets/france-1938.mp4
 PASS  [390px] closing the player stops and unloads the video
 PASS  [390px] teaser iframe loaded with the original document (English)
 PASS  [390px] Portuguese applied to every translatable element (Ted Vigo — Livros, Cinema e Televisão)
